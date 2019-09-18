@@ -2,6 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Component imports
+import { TeamList } from './Components/TeamList';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <TeamList />
       </header>
     </div>
   );
