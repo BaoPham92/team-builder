@@ -13,6 +13,7 @@ export const Members = ({ members }) => {
                 <li>Last name: {members.last_name}</li>
                 <li>Email: {members.email}</li>
                 <li>Gender: {members.gender}</li>
+                <li>Role: {members.role}</li>
             </ul>
         </div>
     )

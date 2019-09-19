@@ -13,7 +13,8 @@ export const TeamList = () => {
         "first_name": "",
         "last_name": "",
         "email": "",
-        "gender": ""
+        "gender": "",
+        "role": ""
     }
 
     const [value, setValue] = useState(initialValue)

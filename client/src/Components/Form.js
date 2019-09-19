@@ -47,6 +47,14 @@ export const Form = ({
                 onChange={handleChange}
                 value={value.gender}
             />
+            <input
+                className={`form-input`}
+                id="role"
+                type="text"
+                name="role"
+                onChange={handleChange}
+                value={value.role}
+            />
             <button className={`submit-btn`} type="submit">Submit</button>
         </form>
     )
