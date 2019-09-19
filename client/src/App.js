@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// Component imports
+// ? Component imports
 import { TeamList } from './Components/TeamList';
 
 function App() {
@@ -11,6 +11,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+
+      {/* 
+        // * RENDER TEAMLIST HERE
+       */}
       <TeamList />
     </div>
   );

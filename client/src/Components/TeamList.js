@@ -5,7 +5,7 @@ import { Form } from './Form';
 
 export const TeamList = () => {
 
-    // useState for new team
+    // * useState for new team
     const [team, setTeam] = useState(list)
 
     // useState for new value obj
@@ -18,13 +18,13 @@ export const TeamList = () => {
 
     const [value, setValue] = useState(initialValue)
 
-    // Console.log data for debugging
+    // ? Console.log data for debugging
     useEffect(() => {
-        // Log data of team members
+        // ? Log data of team members
         console.log(team);
     }, [team])
 
-    // handleChange
+    // * handleChange for input's onChange attr
     const handleChange = (e) => {
 
         // Prevent default behavior
@@ -41,7 +41,7 @@ export const TeamList = () => {
         console.log(value)
     }
 
-    // onSubmit for form submission
+    // * onSubmit for form submission
     const onSubmit = (e) => {
 
         // Prevent default behavior
@@ -59,7 +59,9 @@ export const TeamList = () => {
 
     return (
         <div>
-            {/* Form for creating new member objects */}
+            {/* 
+                // * Form for creating new member objects 
+            */}
             <Form
                 value={value}
                 onSubmit={onSubmit}
@@ -67,8 +69,11 @@ export const TeamList = () => {
             />
 
             <h1>List of Team Members here: </h1>
-            {team && team.map((member, key) => <Members key={key} members={member}/>)}
-            {/* <Members members={team}/> */}
+
+            {/* 
+                // * Ensure team is not false / undefined, then render members from team 
+            */}
+            {team && team.map((member, key) => <Members key={key} members={member} />)}
         </div>
     )
 }

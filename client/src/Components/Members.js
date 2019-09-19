@@ -1,31 +1,24 @@
 import React from 'react';
 
+// Temporary styles
+// TODO: REMOVE AND ADD CLASS
 const style = {
     listStyle: 'none'
 }
 
 export const Members = ({ members }) => {
 
-    console.log(members)
     return (
         <div>
+        {/* 
+            // * Render list of member's key/value pairs 
+        */}
             <ul style={style}>
-                <li>
-                    {members.id}
-                </li>
-                <li>
-                    {members.first_name}
-                </li>
-                <li>
-                    {members.last_name}
-                </li>
-                <li>
-                    {members.email}
-                </li>
-                <li>
-                    {members.gender}
-                </li>
-
+                <li>Member ID: {members.id}</li>
+                <li>First name: {members.first_name}</li>
+                <li>Last name: {members.last_name}</li>
+                <li>Email: {members.email}</li>
+                <li>Gender: {members.gender}</li>
             </ul>
         </div>
     )
