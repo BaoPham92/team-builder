@@ -1,11 +1,5 @@
 import React from 'react';
 
-// Temporary styles
-// TODO: REMOVE AND ADD CLASS
-const style = {
-    listStyle: 'none'
-}
-
 export const Members = ({ members }) => {
 
     return (
