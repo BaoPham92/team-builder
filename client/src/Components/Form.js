@@ -47,6 +47,7 @@ export const Form = ({
                 onChange={handleChange}
                 value={value.gender}
             />
+            <label className={`label`} htmlFor="role">role: </label>
             <input
                 className={`form-input`}
                 id="role"
