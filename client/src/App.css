@@ -47,6 +47,8 @@
   display: flex;
   flex-flow: row wrap;
   width: 100vw;
+
+  background-color: rgba(39,44,52, 0.3);
 }
 
 .members__container {
@@ -78,16 +80,35 @@
 /* 
   * FORM COMPONENT STYLES 
 */
-.form {
-  margin: 1rem auto;
+.teamList h1 {
+  background-color: rgba(39,44,52, 0.3);
 }
 
-.label, .submit-btn {
+/* 
+  * END OF TEAMLIST COMPONENT STYLES 
+*/
+
+/* 
+  * FORM COMPONENT STYLES 
+*/
+.form {
+  /* margin: 1rem auto; */
+  padding: 1rem auto;
+  background-color: rgba(39,44,52, 0.3);
+}
+
+.label {
   padding: 1rem;
 }
 
+.submit-btn {
+  margin-left: 1rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0.6rem;
+}
+
 .form-input {
-  background: rgba(39,44,52, 0.3);
+  background: white;
 }
 
 /* 

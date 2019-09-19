@@ -58,7 +58,7 @@ export const TeamList = () => {
     }
 
     return (
-        <div>
+        <div className={`teamList`}>
             {/* 
                 // * Form for creating new member objects 
             */}
