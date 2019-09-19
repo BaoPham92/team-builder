@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { list } from '../teamData';
+import { Members } from './Members';
 import { Form } from './Form';
 
 export const TeamList = () => {
@@ -58,7 +59,7 @@ export const TeamList = () => {
 
     return (
         <div>
-        {/* Form for creating new member objects */}
+            {/* Form for creating new member objects */}
             <Form
                 value={value}
                 onSubmit={onSubmit}
@@ -66,6 +67,8 @@ export const TeamList = () => {
             />
 
             <h1>List of Team Members here: </h1>
+            {team && team.map((member, key) => <Members key={key} members={member}/>)}
+            {/* <Members members={team}/> */}
         </div>
     )
 }
