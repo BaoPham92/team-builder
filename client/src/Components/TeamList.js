@@ -73,7 +73,9 @@ export const TeamList = () => {
             {/* 
                 // * Ensure team is not false / undefined, then render members from team 
             */}
-            {team && team.map((member, key) => <Members key={key} members={member} />)}
+            <div className={`members__wrapper`}>
+                {team && team.map((member, key) => <Members key={key} members={member} />)}
+            </div>
         </div>
     )
 }

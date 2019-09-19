@@ -9,11 +9,11 @@ const style = {
 export const Members = ({ members }) => {
 
     return (
-        <div>
+        <div className={`members__container`}>
         {/* 
             // * Render list of member's key/value pairs 
         */}
-            <ul style={style}>
+            <ul className={`members__list`}>
                 <li>Member ID: {members.id}</li>
                 <li>First name: {members.first_name}</li>
                 <li>Last name: {members.last_name}</li>

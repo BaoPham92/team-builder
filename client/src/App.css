@@ -1,3 +1,21 @@
+/* 
+  * GLOBAL CSS STYLES
+*/
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border: none;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+/* 
+  * END OF GLOBAL CSS STYLES
+*/
+
 .App {
   text-align: center;
 }
@@ -21,6 +39,41 @@
 .App-link {
   color: #61dafb;
 }
+
+/* 
+  * MEMBERS COMPONENT STYLES 
+*/
+.members__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+}
+
+.members__container {
+  width: 45%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #61DAFB;
+  border-radius: 1rem;
+  border-bottom: 2px solid #272C34;
+  border-left: 1.5px solid #272C34;
+  box-shadow: -2px 2.5px 0.2rem 0.1rem rgba(39,44,52, 0.3);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.members__list {
+  list-style: none;
+  color: #272C34;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* 
+  * END OF MEMBERS COMPONENT STYLES 
+*/
 
 @keyframes App-logo-spin {
   from {
