@@ -75,6 +75,25 @@
   * END OF MEMBERS COMPONENT STYLES 
 */
 
+/* 
+  * FORM COMPONENT STYLES 
+*/
+.form {
+  margin: 1rem auto;
+}
+
+.label, .submit-btn {
+  padding: 1rem;
+}
+
+.form-input {
+  background: rgba(39,44,52, 0.3);
+}
+
+/* 
+  * END OF FORM COMPONENT STYLES 
+*/
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
