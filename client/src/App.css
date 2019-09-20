@@ -1,0 +1,126 @@
+/* 
+  * GLOBAL CSS STYLES
+*/
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border: none;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+/* 
+  * END OF GLOBAL CSS STYLES
+*/
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 25vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* 
+  * MEMBERS COMPONENT STYLES 
+*/
+.members__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+
+  background-color: rgba(39,44,52, 0.3);
+}
+
+.members__container {
+  width: 45%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-bottom: 2px solid #272C34;
+  border-left: 1.5px solid #272C34;
+  box-shadow: -2px 2.5px 0.2rem 0.1rem rgba(39,44,52, 0.3);
+  background-image: linear-gradient(90deg, #757575 0%, #61dafb 99.99%, #F7F7F7 100%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.members__list {
+  list-style: none;
+  color: #272C34;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* 
+  * END OF MEMBERS COMPONENT STYLES 
+*/
+
+/* 
+  * FORM COMPONENT STYLES 
+*/
+.teamList h1 {
+  background-color: rgba(39,44,52, 0.3);
+}
+
+/* 
+  * END OF TEAMLIST COMPONENT STYLES 
+*/
+
+/* background-color: #272c34; */
+
+/* 
+  * FORM COMPONENT STYLES 
+*/
+.form {
+  /* margin: 1rem auto; */
+  padding: 1rem auto;
+  background-color: rgba(39,44,52, 0.3);
+}
+
+.label {
+  padding: 1rem;
+}
+
+.submit-btn {
+  margin-left: 1rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.form-input {
+  background: white;
+}
+
+/* 
+  * END OF FORM COMPONENT STYLES 
+*/
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
